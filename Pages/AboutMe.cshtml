@@ -1,0 +1,84 @@
+﻿@page
+@model MyApp.Namespace.AboutMeModel
+@{
+
+}
+<link rel="stylesheet" />
+<div class="page-wrap">
+    <div class="print-bar">
+        <button class="btn-pdf" onclick="window.print()">&#128438; Save as PDF</button>
+    </div>
+
+    <div class="resume">
+
+        <h1 class="resume-name">@Model.full_name</h1>
+        <p class="resume-title">Student of Teacher Symon</p>
+
+        <div class="contact-info">
+            <span>@Model.email </span>
+            <span class="sep">||</span>
+            <span>@Model.phone_number</span>
+            <span class="sep">||</span>
+            <span>Phnom Penh Cambodia</span>
+        </div>
+
+        <hr class="divider" />
+
+        <div class="body-grid">
+
+            <div class="left-col">
+
+                <div class="section">
+                    <p class="section-label">Technical Skills</p>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Flutter</span>
+                        <span class="skill-tag">Figma</span>
+                        <span class="skill-tag">HTML</span>
+                        <span class="skill-tag">CSS</span>
+                        <span class="skill-tag">JQuery</span>
+                        <span class="skill-tag">Bootstrap</span>
+                        <span class="skill-tag">Git</span>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <p class="section-label"></p>
+                    <p class="edu-degree"></p>
+                    <p class="edu-year"></p>
+                    <p class="edu-school"></p>
+                </div>
+
+            </div>
+
+            <div class="right-col">
+
+                <div class="section">
+                    <p class="section-label">Summary</p>
+                    <p class="summary-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
+                        praesentium
+                        ratione sed in quis autem et placeat vel?</p>
+                    </div>
+
+                    <div class="section">
+                        <p class="section-label">More</p>
+
+                        <div class="exp-item">
+                            <div class="exp-row">
+                                <span class="exp-role"></span>
+                                <span class="exp-date"></span>
+                            </div>
+                            <p class="exp-company">.</p>
+                            <ul class="exp-bullets">
+                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>

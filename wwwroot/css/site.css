@@ -1,0 +1,396 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus,
+.btn:active:focus,
+.btn-link.nav-link:focus,
+.form-control:focus,
+.form-check-input:focus {
+  box-shadow:
+    0 0 0 0.1rem white,
+    0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  background-color: white;
+}
+
+.form-floating > .form-control-plaintext::placeholder,
+.form-floating > .form-control::placeholder {
+  color: var(--bs-secondary-color);
+  text-align: end;
+}
+
+.form-floating > .form-control-plaintext:focus::placeholder,
+.form-floating > .form-control:focus::placeholder {
+  text-align: start;
+}
+.navbar {
+  background: #0d1b2a !important;
+  border-bottom: 2px solid #ff3366 !important;
+  padding: 0 40px !important;
+  height: 56px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-brand {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: white !important;
+  letter-spacing: 1px;
+}
+
+.nav-link {
+  color: #ccc !important;
+  font-size: 0.85rem;
+  padding: 6px 16px !important;
+  position: relative;
+  transition: color 0.3s;
+}
+.nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0; /* ← ចាប់ផ្តើមពី right */
+  width: 0; /* ← width = 0 ដំបូង */
+  height: 2px;
+  background: #ff3366;
+  transition: width 0.3s ease;
+}
+.nav-link:hover::after,
+.nav-link.active::after {
+  width: 100%; /* ← ពង្រីកទៅ left */
+  left: 0;
+  right: auto;
+}
+.nav-link:hover,
+.nav-link.active {
+  color: white !important;
+  font-weight: 600;
+}
+.top-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+.bottom-grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 16px;
+}
+
+.c-edu img {
+  width: 150px; /* ← កំណត់ទទឹង */
+  height: 180px; /* ← កំណត់កម្ពស់ */
+  border-radius: 10px;
+  display: block;
+  margin: 10px auto 0;
+  object-fit: cover; /* ← រូបមិនខ្វិត */
+}
+.print-bar {
+  max-width: 500px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+.portfolio-body {
+  max-width: 1000px; /* ← ប្រើ max-width ជំនួស width */
+  margin: 30px auto;
+  padding: 0 20px;
+  display: grid;
+  gap: 12px;
+}
+.card {
+  border-radius: 14px;
+  background-color: cyan;
+  padding: 24px;
+  text-align: center;
+  color: black;
+}
+.Favorite {
+  background: white;
+  border-color: cyan;
+  transition: 0.3s;
+}
+.Favorite:hover {
+  background-color: blanchedalmond;
+  transform: scale(1.04);
+  cursor: pointer;
+}
+.c-edu {
+  background: white;
+  border-color: cyan;
+  transition: 0.3s;
+}
+.c-edu:hover {
+  background-color: blanchedalmond;
+  transform: scale(1.04);
+  cursor: pointer;
+}
+.c-ski {
+  background: white;
+  border-color: cyan;
+  transition: 0.3s;
+}
+.c-ski:hover {
+  background-color: blanchedalmond;
+  transform: scale(1.04);
+  cursor: pointer;
+}
+.c-exp {
+  background: white;
+  border-color: cyan;
+  transition: 0.3s;
+}
+.c-exp:hover {
+  background-color: blanchedalmond;
+  transform: scale(1.04);
+  cursor: pointer;
+}
+
+.hobbies {
+  background-color: rgb(235, 229, 229);
+  border-color: cyan;
+  border-radius: 14px;
+  padding: 22px;
+  text-align: center;
+  color: black;
+}
+
+.btn-pdf {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 28px;
+  background: #c0395a;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.btn-pdf:hover {
+  background: blueviolet;
+}
+
+.resume {
+  background-color: white;
+  padding: 52px 60px;
+  border-radius: 4px;
+  width: 100%;
+  max-width: 860px;
+  border: 2px solid cyan;
+}
+
+.resume-name {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 700;
+  color: #1a1a1a;
+  letter-spacing: -0.5px;
+  margin-bottom: 4px;
+}
+
+.resume-title {
+  text-align: center;
+  font-size: 13px;
+  font-weight: 400;
+  color: #666;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 6px 4px;
+  font-size: 13px;
+  color: #555;
+  margin-bottom: 28px;
+}
+
+.divider {
+  border: none;
+  border-top: 2px solid #c0395a;
+  margin-bottom: 32px;
+}
+
+.body-grid {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 40px;
+}
+
+.section {
+  margin-bottom: 30px;
+}
+
+.section-label {
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: #c0395a;
+  margin-bottom: 12px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid #e8dfc9;
+}
+
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  transition: 0.3s;
+}
+
+.skill-tag {
+  background: #f8f3ea;
+  border: 1px solid cyan;
+  color: #7a6340;
+  font-size: 12px;
+  padding: 5px 11px;
+  border-radius: 3px;
+  transition: 0.3s;
+}
+.skill-tag:hover {
+  background-color: green;
+  color: white;
+  transform: scale(1.04);
+}
+
+.edu-degree {
+  font-weight: 600;
+  font-size: 14px;
+  color: #1a1a1a;
+  margin-bottom: 2px;
+}
+
+.edu-year {
+  font-size: 13px;
+  color: #999;
+  font-style: italic;
+  margin-bottom: 2px;
+}
+
+.edu-school {
+  font-size: 13px;
+  color: #555;
+}
+
+.summary-text {
+  font-size: 14px;
+  line-height: 1.8;
+  color: #444;
+}
+
+.exp-item {
+  margin-bottom: 22px;
+}
+
+.exp-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 2px;
+}
+
+.exp-role {
+  font-weight: 600;
+  font-size: 15px;
+  color: #1a1a1a;
+}
+
+.exp-date {
+  font-size: 13px;
+  color: #aaa;
+  font-style: italic;
+}
+
+.exp-company {
+  font-size: 13px;
+  color: #c9a96e;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.exp-bullets {
+  list-style: none;
+}
+
+.exp-bullets li {
+  position: relative;
+  padding-left: 16px;
+  font-size: 13.5px;
+  color: #444;
+  line-height: 1.7;
+  margin-bottom: 4px;
+}
+
+.exp-bullets li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 9px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #c9a96e;
+}
+
+.contact-info .sep {
+  color: #c9a96e;
+  margin: 0 4px;
+}
+
+.contact-info a {
+  color: #555;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  color: #c0395a;
+}
+
+/* PRINT / PDF */
+@media print {
+  @page {
+    size: A4;
+    margin: 0;
+  }
+  body {
+    background: #fff !important;
+    padding: 0;
+    display: block;
+    align-items: center;
+  }
+  .print-bar {
+    display: none !important;
+  }
+  .resume {
+    border-radius: 0;
+    max-width: 100%;
+    width: 100%;
+    padding: 36px 48px;
+    align-items: center;
+  }
+  .exp-item {
+    page-break-inside: avoid;
+  }
+}
