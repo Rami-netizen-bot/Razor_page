@@ -93,4 +93,5 @@ D:\LearningcoputerIT\APS.Net_Remi\resume_ui\obj\Debug\net9.0\refint\resume_ui.dl
 D:\LearningcoputerIT\APS.Net_Remi\resume_ui\obj\Debug\net9.0\resume_ui.pdb
 D:\LearningcoputerIT\APS.Net_Remi\resume_ui\obj\Debug\net9.0\resume_ui.genruntimeconfig.cache
 D:\LearningcoputerIT\APS.Net_Remi\resume_ui\obj\Debug\net9.0\ref\resume_ui.dll
-D:\LearningcoputerIT\APS.Net_Remi\resume_ui\obj\Debug\net9.0\compressed\nf2lwhdm0p-tfsa9qsacy.gz
+D:\LearningcoputerIT\APS.Net_Remi\resume_ui\obj\Debug\net9.0\resume_ui.sourcelink.json
+D:\LearningcoputerIT\APS.Net_Remi\resume_ui\obj\Debug\net9.0\compressed\nf2lwhdm0p-jkuxyz0chr.gz

@@ -65,15 +65,15 @@ body {
   content: "";
   position: absolute;
   bottom: 0;
-  right: 0; /* ← ចាប់ផ្តើមពី right */
-  width: 0; /* ← width = 0 ដំបូង */
+  right: 0;
+  width: 0;
   height: 2px;
   background: #ff3366;
   transition: width 0.3s ease;
 }
 .nav-link:hover::after,
 .nav-link.active::after {
-  width: 100%; /* ← ពង្រីកទៅ left */
+  width: 100%;
   left: 0;
   right: auto;
 }
@@ -94,12 +94,12 @@ body {
 }
 
 .c-edu img {
-  width: 150px; /* ← កំណត់ទទឹង */
-  height: 180px; /* ← កំណត់កម្ពស់ */
+  width: 150px;
+  height: 180px;
   border-radius: 10px;
   display: block;
   margin: 10px auto 0;
-  object-fit: cover; /* ← រូបមិនខ្វិត */
+  object-fit: cover;
 }
 .print-bar {
   max-width: 500px;
@@ -108,7 +108,7 @@ body {
   margin-bottom: 16px;
 }
 .portfolio-body {
-  max-width: 1000px; /* ← ប្រើ max-width ជំនួស width */
+  max-width: 1000px;
   margin: 30px auto;
   padding: 0 20px;
   display: grid;
@@ -261,18 +261,19 @@ body {
 }
 
 .skill-tag {
-  background: #f8f3ea;
+  background: white;
   border: 1px solid cyan;
   color: #7a6340;
   font-size: 12px;
   padding: 5px 11px;
   border-radius: 3px;
-  transition: 0.3s;
+  transition: 0.3s ease-in;
 }
 .skill-tag:hover {
-  background-color: green;
-  color: white;
-  transform: scale(1.04);
+  background-color: cyan !important;
+  color: black;
+  transform: scale(1.1);
+  cursor: pointer;
 }
 
 .edu-degree {
@@ -368,7 +369,6 @@ body {
   color: #c0395a;
 }
 
-/* PRINT / PDF */
 @media print {
   @page {
     size: A4;
@@ -392,5 +392,19 @@ body {
   }
   .exp-item {
     page-break-inside: avoid;
+  }
+}
+.page-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 32px 16px;
+  min-height: 100vh;
+  background: #f5f5f4;
+}
+@media print {
+  .page-wrap {
+    display: block;
+    padding: 0;
   }
 }

@@ -5,10 +5,10 @@ namespace MyApp.Namespace
 {
     public class ExperienceItem
     {
-        public string Role    { get; set; } = "";
-        public string Company { get; set; } = "";
-        public string Period  { get; set; } = "";
-        public List<string> Bullets { get; set; } = new();
+        public string Role    { get; set; }
+        public string Company { get; set; } 
+        public string Period  { get; set; }
+        public List<string> Bullets { get; set; }
     }
 
     public class AboutMeModel : PageModel
