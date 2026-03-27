@@ -14,7 +14,6 @@ public class PrivacyModel : PageModel
          full_name     = "Ramy";
             job_Title     = "Student of IT department";
             email         = "030805ramy@gmail.com";
-           
             adddress_user = "Phnom Penh, Cambodia";
                       
 
