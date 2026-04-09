@@ -1,0 +1,35 @@
+﻿@page
+@model resume_ui.Pages.HomeWor_loginModel
+@{
+}
+<div class="login-box">
+    <h2>Welcome Back</h2>
+
+    @if (!string.IsNullOrEmpty(Model.SuccessMessage))
+    {
+        <div class="alert-success">
+            Login successful!
+        </div>
+    }
+
+    @if (!string.IsNullOrEmpty(Model.ErrorMessage))
+    {
+        <div class="alert-error">
+            @Model.ErrorMessage
+        </div>
+    }
+
+    <form method="post">
+        <div class="form-group">
+            <label>Username</label>
+            <input asp-for="InputUsername" class="input-field" placeholder="admin" />
+        </div>
+
+        <div class="form-group">
+            <label>Password</label>
+            <input asp-for="InputPassword" type="password" class="input-field" placeholder="Enter password" />
+        </div>
+
+        <button type="submit" class="btn-login">Login</button>
+    </form>
+</div>

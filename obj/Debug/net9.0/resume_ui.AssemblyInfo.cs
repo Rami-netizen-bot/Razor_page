@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("resume_ui")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+181dddb7a4180f6c0e7567d19559eb65a393fb4c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+731597060630f01e4dd35d25664535f6459c0d7b")]
 [assembly: System.Reflection.AssemblyProductAttribute("resume_ui")]
 [assembly: System.Reflection.AssemblyTitleAttribute("resume_ui")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
